@@ -3,7 +3,7 @@ var transporter=nodemailer.createTransport({
 service:'gmail',
 auth:{
 user:'chowhanpaawan3@gmail.com',
-pass:'undertaker57'
+pass:'***********'
 }
 
 });
