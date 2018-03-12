@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>TEST</title>
+        <script>
+        var object="<%=obj%>";
+            var len="<%=len%>";
+        
+        </script>
+        <style>
+            #full,body{
+                background-color: #a6f441;
+                height: 100%;
+                width: 100%;
+                
+            }
+            #bodr{
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-left: 40px;
+                margin-right: 40px;
+                height: inherit;
+                padding: 10% 5%;
+                border: solid;
+                border-radius: 5px;
+                border-color: #4CAF50;
+                font-family: sans-serif;       
+                font-style: oblique;
+                font-size: 30px;
+            }
+            #option1,#option3,#option2,#option4{
+                height: 5%;
+                width: 10%;
+                
+            }
+             #opt1,#opt3{
+                 font-size:30px;
+                 font-family: sans-serif;
+                 font-style: oblique;
+                 clear: both;
+                overflow: hidden;
+                 width:inherit;
+                 display: inline;
+                 position: relative;
+                 top:50%;
+                 
+            }
+            #opt2,#opt4{
+                font-size:30px;
+                 font-family: sans-serif;
+                 font-style: oblique;
+                display: inline;
+                position: relative;
+                 top:50%;
+                 left:20%;
+                 max-width: inherit;
+            }
+            .dv{
+              
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="full">
+            
+            <div id="bodr">
+                <div id="ques">here is a question</div><br>
+            <script>document.write(object);
+                
+                document.write(len);
+                
+                
+                </script>
+    
+            <div class="button"></div>
+            
+</div>    
+
+        </div>
+    </body>
+</html>

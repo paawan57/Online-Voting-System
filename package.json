@@ -1,0 +1,17 @@
+{
+  "name": "placement_guru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server1.js",
+  "scripts": {
+    "build": "browserify server1.js -o bundle.js"
+  },
+  "author": "our_grp",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

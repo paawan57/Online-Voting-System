@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Welcome</title>
+        
+		<style>
+			#full{
+				background-color:#a6f441;
+				height:100%;
+				width:100%;
+				padding:2px;
+			}
+			.side-panel{
+				background-color:#42f4d1;
+				height:100%;
+				width:25%;
+				padding:2px;
+				margin:0px 0px;
+				border-inline-end-style: solid;
+			}
+			a#start-test-bttn,a#pre-score-bttn,a#log-out-bttn {
+   				-webkit-appearance: button;
+    				-moz-appearance: button;
+    				appearance: button;
+    				text-decoration: none;
+				background-color: #4CAF50;
+				border: none;
+    				color: white;
+    				padding: 15px 32px;
+    				text-align: center;
+    				text-decoration: none;
+    				display: inline-block;
+    				font-size: 16px;
+    				margin: 4px 2px;
+    				cursor: pointer;
+				    border-radius:5px;
+				  
+                    width: 60%;
+                    min-width: auto;  
+                    max-width: auto;
+				    position: relative; 
+    				left:10%;
+                    right:10%;
+				
+				}
+			.from {
+				position: absolute;
+				top:40%;
+				height:60%;  
+				width:20%;
+				}
+            #label{
+                font-style: oblique;
+                position: absolute;
+                top:20%;
+                left:30%;
+            }
+            p{
+                font-style: oblique;
+                font-display: auto;
+                font-family: sans-serif;
+                font-size: 16px;
+                font-size-adjust: auto;
+            }
+		</style>
+        
+        <script>
+            var topic;
+            topic="Hello, <%=email%>"; 
+             var para;
+            para="Welcome to placement Guru here we test your apptitude and technical skills based on your branch </br>            This test is made by Gits student...</br> As there group project:-)";
+      
+        </script>
+      
+	</head>
+	<body>
+		<div id="full">
+		 <div class="side-panel">
+		  <div class="from">
+		   <a href="#" id="start-test-bttn" > START TEST </a></br>
+		   <a href="#" id="pre-score-bttn" style="position:relative ;top: 10%">PREVIOUS SCORE</a></br>
+		   <a href="/logout" id="log-out-bttn" style="position:relative ;top: 20%">LOG OUT</a>
+		  </div>            
+		 </div>
+    <div id="label"><h1><script type="text/javascript">document.write(topic)</script></h1>
+        </br></br>
+        <p id="p1"><script type="text/javascript">document.write(para)</script>
+        </p>    
+         </div>     
+		</div>
+
+    <script src="assets/plugins/jQuery/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script>
+        
+        
+        $(document).ready(function(){
+           $('#start-test-bttn').click(function(){
+               $('p1').innerHTML = "<h1>RULES</h1></br><ol><li>all question carry one marks each.</li><li>there is no negative marking.</li><li>only 15 minutes is given to your test.</li></ol> ";
+           }); 
+        });
+        
+        
+//         function theFunction () {
+//            var p1=document.getElementById("p1");
+//             p1.innerHTML = "<h1>RULES</h1></br><ol><li>all question carry one marks each.</li><li>there is no negative marking.</li><li>only 15 minutes is given to your test.</li></ol> ";
+//            var l = document.getElementById("label");
+//            l.innerHTML=p1.innerHTML+"</br><button style='background-color:#4CAF50; color: white;position: relative;left:100%;'>GO</button>";
+//             return true;
+//         }
+    </script>
+	</body>
+</html>
